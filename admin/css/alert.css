@@ -1,0 +1,31 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* Bắt đầu ngoài màn hình bên phải */
+    }
+    to {
+        transform: translateX(0); /* Kết thúc trong màn hình */
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0); /* Bắt đầu trong màn hình */
+    }
+    to {
+        transform: translateX(100%); /* Kết thúc ngoài màn hình bên phải */
+    }
+}
+
+/* Phong cách ban đầu của div là ẩn */
+.alert {
+    display: none; /* Không hiển thị ban đầu */
+    position: fixed;
+    top: 50%; /* Căn giữa theo chiều dọc */
+    right: 0; /* Đặt ở góc phải */
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}

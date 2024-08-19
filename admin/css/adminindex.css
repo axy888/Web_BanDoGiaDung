@@ -1,0 +1,490 @@
+#menu{
+    background-color: #333e48;
+    width: 12%;
+    height: 750px;
+    position: fixed;
+}
+#menu ul {
+    list-style-type: none;
+    padding: 5%;
+    margin: 0;
+}
+
+#menu ul li {
+    display: block; /* Hiển thị mỗi mục li trên một dòng */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục li */
+}
+#menu ul li a{
+    display: flex;
+    align-items: center;
+}
+#menu li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#trang-quan-li{
+    height: 100%;
+    width: 90%;
+    margin-left: 200px;
+}
+#admin-container{
+    display: flex;
+    height: auto;
+}
+.set_icon{
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100px;
+}
+.menu_icon{
+    filter: brightness(0) invert(1);
+    padding-left: 5px;
+    padding-top: 5px;
+}
+/* catagory*/
+.del_icon{
+    width: 25px;
+}
+.detail_icon{
+    width: 25px;
+}
+.icon_thaotac a{
+    text-decoration: none;
+}
+.update_icon{
+    width: 25px;
+}
+.category_add{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: grey;
+}
+.category_add img{
+    width: 14px;
+}
+/*product*/
+#pro_table tbody td{
+    border: 1px solid #333e48;
+}
+#pro_table thead th{
+    border: 1px solid #333e48;
+}
+/*table*/
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+table, td, th{
+    border-bottom: 1px solid #333e48;
+    border-collapse: collapse;
+}
+table tbody tr td a{
+    text-decoration: none;
+}
+.product tbody td{
+    border-left: 1px solid #333e48;
+}
+td, th{
+    padding: 10px 10px;
+}
+table thead th{
+    text-align: left;
+    background: #DDDDDD;
+}
+table thead tr{
+    background: black;
+}
+table tbody tr:nth-child(even){
+    background: #DDDDDD;
+}
+h2{
+    background: linear-gradient(to right, #333e48,#9f9f9f);
+    color: whitesmoke;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+/**/
+.addForm{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    color: #DDDDDD;
+    top: 0%;
+    left: 0%;
+    z-index: 1000;
+}
+.addForm h2{
+    background: none;
+    color: black;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.updateForm{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: #DDDDDD;
+    top: 0%;
+    left: 0%;
+    z-index: 1000;
+}
+.updateForm h2{
+    background: none;
+    color: black;
+    margin-left: 9%;
+}
+.form_add,.form_update{
+    position: relative;
+    background-color: white;
+    color: black;
+    margin-left: 50%;
+    margin-top: 25%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+}
+#form_addCate{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+
+#form_addAccount{
+    width: 400px;
+    height: 420px;
+    text-align: center;
+}
+
+#form_updateAccount
+{
+    width: 400px;
+    height:250px;
+    text-align: center;
+}
+
+#form_updateImportDetail
+{
+    width: 400px;
+    height:300px;
+    text-align: center;
+}
+
+#sanphamUpdate
+{
+    width: 230px;
+}
+#form_addSup{
+    width: 400px;
+    height: 350px;
+    text-align: center;
+}
+#form_addPro{
+    width: 500px;
+    height: 550px;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+}
+
+#form_addPro select{
+    float: right;
+    margin-right: 10%;
+}
+.btn_in_form{
+    height: 40px;
+    width: 140px;
+    background: none;
+    border-radius: 3px;
+    border: none;
+    background-color: #2d8226;
+    color: white;
+}
+.btn_in_form:hover{
+    background-color: white;
+    color: #2d8226;
+    border: 1px solid #2d8226;
+}
+
+.closeForm {
+
+    position: absolute; /* Định vị tuyệt đối */
+    float: middle;
+    padding: 10px 15px; /* Khoảng trống bên trong nút */
+    background-color: #ccc; /* Màu nền */
+    border: none; /* Bỏ đường viền */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua nút */
+    z-index: 1500;
+    width: 40px;
+    height: 40px;
+  }
+
+  #closeForm {
+
+    position: absolute; /* Định vị tuyệt đối */
+    float: middle;
+    padding: 10px 15px; /* Khoảng trống bên trong nút */
+    background-color: #ccc; /* Màu nền */
+    border: none; /* Bỏ đường viền */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua nút */
+    z-index: 1500;
+    width: 40px;
+    height: 40px;
+  }
+
+  #closeUpdateForm {
+
+    position: absolute; /* Định vị tuyệt đối */
+    float: middle;
+    padding: 10px 15px; /* Khoảng trống bên trong nút */
+    background-color: #ccc; /* Màu nền */
+    border: none; /* Bỏ đường viền */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua nút */
+    z-index: 1500;
+    width: 40px;
+    height: 40px;
+  }
+  #positionc{
+    
+    top: 0%; /* Vị trí 10px từ cạnh trên */
+    right: 0%; /* Vị trí 10px từ cạnh phải */
+  }
+
+  .positioncAddAccount{
+    
+    top: 24.5%; /* Vị trí 10px từ cạnh trên */
+    right: 37.5%;
+  }
+
+  .positioncUpdateAccount{
+    
+    top: 37.5%; /* Vị trí 10px từ cạnh trên */
+    right: 37.5%;
+  }
+
+  .positioncUpdateImportDetail{
+    
+    top: 32.5%; /* Vị trí 10px từ cạnh trên */
+    right: 36.5%;
+  }
+
+
+  #closeSupplier{
+    
+    top: 0%; /* Vị trí 10px từ cạnh trên */
+    right: 0%; /* Vị trí 10px từ cạnh phải */
+  }
+  .closeForm:hover{
+    background-color: red;
+    color: white;
+  }
+  #addProduct{
+    display: none;
+  }
+  #close2{
+    top: 0%; /* Vị trí 10px từ cạnh trên */
+    right: 0%; /* Vị trí 10px từ cạnh phải */
+  }
+  #form_addPro textarea{
+    float: right;
+    margin-right: 10%;
+  }
+  #addSupplier{
+    display: none;
+  }
+  #btnAddPro{
+    margin-top: 15%;
+    margin-left: 25%;
+    transform: translate(15%, -50%);
+  }
+#btnAddSup{
+    margin-top: 15%;
+    margin-left: 25%;
+    transform: translate(-50%, -50%);
+}
+.category_add:hover{
+    background-color: #267582;
+    color: white;
+}
+#form_addPer{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+#btnAddPer{
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-60%, 0%);
+}
+#btna{
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    height: 30px;
+    top: 0%; /* Vị trí 10px từ cạnh trên */
+    right: 0%; /* Vị trí 10px từ cạnh phải */
+}
+#btnaImp{
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    height: 30px;
+    top: 0%; /* Vị trí 10px từ cạnh trên */
+    right: 0%; /* Vị trí 10px từ cạnh phải */
+}
+.btnaUpdate{
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    height: 30px;
+    top: 0%; /* Vị trí 10px từ cạnh trên */
+    right: 0%; /* Vị trí 10px từ cạnh phải */
+}
+#form_addImp{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+}
+#form_addImp h2{
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+}
+
+#form_addImp select{
+    float: right;
+    margin-right: 10%;
+    width: 300px;
+}
+#form_addImpView{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+}
+#form_addImpView h2{
+    margin-left: 50%;
+    transform: translate(-30%,0%);
+}
+#form_addImpView select{
+    float: right;
+    margin-right: 10%;
+    width: 300px;
+}
+#form_chitiet{
+    width: 80%;
+}
+#form_chitiet #btna{
+    margin-right: -40px;
+    background-color: #c12828;
+    color: white;
+}
+#form_chitiet #btna:hover{
+    background-color: white;
+    color: #c12828;
+}
+#tongtien_orderDetail{
+    float: right;
+    transform: translate(-25%,0%);
+}
+.btn_xacnhan{
+    text-decoration: none;
+    float: right;
+    transform: translate(-20%,0%);
+    padding: 10px;
+    background-color: #2d8226;
+    color: white;
+}
+.btn_xacnhan:hover{
+    background-color: white;
+    color: #2d8226;
+    border: 1px solid #2d8226;
+}
+#form_updateCate{
+    width: 450px;
+    height: 200px;
+    text-align: center;
+}
+
+#form_updateSup{
+    width: 450px;
+    height: 350px;
+    text-align: center;
+}
+#form_ctpq{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+}
+#form_ctpq h2{
+    background-color: #386289;
+    color: white;
+    width: 60%;
+    padding-left: 40%;
+    border-top-left-radius: 15px;
+}
+#form_ctpq table tr th{
+    text-align: center;
+}
+#form_updatePer{
+    width: 350px;
+    height: 250px;
+    text-align: center;
+}
+.form_add label{
+    float: left;
+    margin-left: 10%;
+}
+.form_add input{
+    float: right;
+    margin-right: 10%;
+}
+#form_updatePro{
+    width: 700px;
+    height: 550px;
+    text-align: center;
+}
+#form_updatePro select{
+    float: right;
+    margin-right: 10%;
+}
+#form_updatePro textarea{
+    float: right;
+    margin-right: 10%;
+    width: 440px;
+    height: 60px;
+}
+#form_updatePro img{
+    position: relative;
+    margin-top: -20%;
+    margin-left: -20%;
+}
+#form_slidedetail{
+    height: 400px;
+}
+#form_slidedetail h2{
+    margin-left: 45%;
+}
+#closeslide{
+        top: 0%; /* Vị trí 10px từ cạnh trên */
+        right: 0%; /* Vị trí 10px từ cạnh phải */
+}
+#addslidedetailform input{
+    float: left;
+}
+#btnslide{
+    width: 180px;
+}
