@@ -1,0 +1,47 @@
+#sanpham-danhmuc{
+    background-color: white;
+    width: 150px;
+    display: inline-block;
+    
+}
+#sanpham-danhmuc p {
+    margin: 10px;
+    margin-bottom: 20px;
+    
+}
+#sanpham-cacdanhmuc{
+    display: flex;
+  flex-direction: column; 
+}
+#sanpham-cacdanhmuc a{
+    text-decoration: none;
+    color: black; /* Màu văn bản khi hover */
+    border-bottom: 1px solid black;
+    margin: 5px;
+    font-size: smaller;
+    font-weight: bold;
+    padding: 4px;
+}
+#sanpham-cacdanhmuc a:hover{
+    color: red;
+    cursor: pointer;
+}
+#trangsanpham{
+    display: flex;
+    flex-direction: row;
+}
+#sort-bar{
+    background-color: rgb(237, 237, 237);
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+#sort-bar a{
+    text-decoration: none;
+    margin: auto;
+    margin-left: 10%;
+}
+
+
