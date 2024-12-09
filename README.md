@@ -17,6 +17,13 @@ An online website that helps you buy household appliances. You can manage the we
 
 ### Installing
 
+First, clone the repository to your local machine using the following command:
+
+```
+https://github.com/axy888/Web_BanDoGiaDung.git
+cd Web_BanDoGiaDung
+```
+
 Install the sql file  ```dvd_household.sql``` in the folder ```database``` and add it to your database.
 
 The **admin** file is in the folder ```admin```.
